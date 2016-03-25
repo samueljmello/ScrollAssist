@@ -167,12 +167,12 @@ jQuery.fn.ScrollAssist = function(settings) {
         return false;
     }
     
-    var newObject = ScrollAssist;
+    var newObject = new ScrollAssist;
 
     // if settings are provided
     if (settings != undefined) {
 
-        // four configurable options:
+        // three configurable options:
         //  -   boundary percentage
         //  -   scroll event timeout
         //  -   scroll transition speed 
@@ -183,7 +183,7 @@ jQuery.fn.ScrollAssist = function(settings) {
         if ( settings.timeout != undefined && !isNaN(settings.timeout)) {
             newObject.timeout = settings.timeout;
         }
-        if ( settings.timeout != undefined && !isNaN(settings.timeout)) {
+        if ( settings.transition != undefined && !isNaN(settings.transition)) {
             newObject.transition = settings.transition;
         }
     }

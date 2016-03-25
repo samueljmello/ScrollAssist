@@ -1,5 +1,6 @@
-ScrollAssist - jQuery Plugin
+ScrollAssist
 ===================
+A jQuery plugin to assist with scrolling from element to element. Use case; when you want the page adjust down or up to specific elements once the user scrolling completes.
 
 
 Tested with:
